@@ -12,10 +12,10 @@
   </ol>
   <h1 style="font-family: cursive;text-align: center;">Bon courage</h1>
   <div class="name col-md-4 my-3">
-<label for="">Entrez votre nom</label>
-<input type="text" class="form-control">
+    <label for="">Entrez votre nom</label>
+    <input #name type="text" class="form-control">
   </div>
-  <button class="btn btn-primary btn-lg" routerLink="/question">
-Commencer
+  <button class="btn btn-primary btn-lg" (click)="startQuiz()" routerLink="/question">
+    Commencer
   </button>
 </div>
