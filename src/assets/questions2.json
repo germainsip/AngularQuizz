@@ -1,0 +1,60 @@
+{
+  "titre": "evatest",
+  "domaine": "test",
+  "questions": [
+    {
+      "intitule": "Pourquoi?",
+      "reponse": [
+        {
+          "choix": "moi",
+          "bonneReponse": true
+        },
+        {
+          "choix": "toi"
+        },
+        {
+          "choix": "qqun"
+        },
+        {
+          "choix": "autre"
+        }
+      ]
+    },
+    {
+      "intitule": "Comment?",
+      "reponse": [
+        {
+          "choix": "moi",
+          "bonneReponse": true
+        },
+        {
+          "choix": "toi"
+        },
+        {
+          "choix": "qqun"
+        },
+        {
+          "choix": "autre"
+        }
+      ]
+    },
+    {
+      "intitule": "Avec qui?",
+      "reponse": [
+        {
+          "choix": "moi",
+          "bonneReponse": true
+        },
+        {
+          "choix": "toi"
+        },
+        {
+          "choix": "qqun"
+        },
+        {
+          "choix": "autre"
+        }
+      ]
+    }
+  ]
+}

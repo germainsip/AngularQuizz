@@ -10,8 +10,8 @@ export class QuestionService {
 
    }
 
-   getQuestionJson(){
-    return this.http.get<any>("assets/questions.json");
-    // return this.http.get<any>("http://localhost:8000/api/evaluations/1.json");
+   getQuestionJson(id: number){
+    // return this.http.get<any>("assets/questions.json");
+    return this.http.get<any>("http://localhost:8000/api/evaluations/"+id+".json");
   }
 }
