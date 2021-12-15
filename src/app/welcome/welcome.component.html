@@ -1,21 +1,21 @@
-<div class="container bg-light py-5">
-  <h1 class="display-5 fw-bold">Salut sur l'app de Quizz</h1>
+<div class="container shadow bg-light m-5 rounded-md p-5 bg-white">
+  <h1 class="text-3xl">Salut sur l'app de Quizz</h1>
   <p class="col-md-8 fs-4">
     Ce quizz contient 9 questions. Chaque question vaut 10 points
   </p>
-  <h4>Règles:</h4>
-  <ol>
+  <h4 class="text-2xl">Règles:</h4>
+  <ol class="m-2">
     <li>Une réponse correct vaut 10 points</li>
     <li>Une réponse fausse enlève 5 points</li>
     <li>Vous aurez 60 secondes pour répondre</li>
     <li>Ne rafraîchissez pas la page sous peine de perdre votre progression</li>
   </ol>
   <h1 style="font-family: cursive;text-align: center;">Bon courage</h1>
-  <div class="name col-md-4 my-3">
+  <div class="name space-x-2 my-3">
     <label for="">Entrez le numéro de l'évaluation</label>
-    <input #id type="text" class="form-control">
+    <input #id type="text" class="border-2 border-green-500 rounded-md shadow-inner">
   </div>
-  <button class="btn btn-primary btn-lg" (click)="startQuiz()" routerLink="/question">
+  <button class="bg-green-500 p-2 rounded-lg text-white" (click)="startQuiz()" routerLink="/question">
     Commencer
   </button>
 </div>
