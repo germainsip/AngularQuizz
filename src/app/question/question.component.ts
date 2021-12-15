@@ -47,6 +47,11 @@ export class QuestionComponent implements OnInit {
     this.currentQuestion++;
     console.log("question numéro : " + this.currentQuestion);
     this.getProgressPercent();
+    if (this.currentQuestion >= (this.questionList.length)) {
+      this.stopCounter();
+      this.isQuizCompleted = true;
+      this.validateQuiz();
+    }
   }
   previousQuestion() {
     this.currentQuestion--;
@@ -71,11 +76,7 @@ export class QuestionComponent implements OnInit {
 
 
     }
-    if (currentQuestion >= (this.questionList.length)) {
-      this.stopCounter();
-      this.isQuizCompleted = true;
-      this.validateQuiz();
-    }
+
 
     console.log(this.isQuizCompleted);
 
@@ -86,7 +87,8 @@ export class QuestionComponent implements OnInit {
         this.counter--;
 
         if (this.counter === 0) {
-          this.currentQuestion++;
+          //this.currentQuestion++;
+          this.nextQuestion();
           this.counter = 60;
           // this.points -= 10;
         }

@@ -9,13 +9,13 @@ export class ChangeBgDirective {
   constructor(private el : ElementRef, private render : Renderer2) { }
   @HostListener('click') answer(){
     if(this.isCorrect){
-      this.render.setStyle(this.el.nativeElement,'background','green');
-      this.render.setStyle(this.el.nativeElement,'color','#fff');
-      this.render.setStyle(this.el.nativeElement,'border','2px solid grey');
+      this.render.addClass(this.el.nativeElement,'text-white');
+      this.render.addClass(this.el.nativeElement,'bg-teal-400');
     } else {
-      this.render.setStyle(this.el.nativeElement,'background','red');
-      this.render.setStyle(this.el.nativeElement,'color','#fff');
-      this.render.setStyle(this.el.nativeElement,'border','2px solid grey');
+      this.render.addClass(this.el.nativeElement,'text-white');
+      this.render.addClass(this.el.nativeElement,'bg-red-400');
+
     }
+
   }
 }
